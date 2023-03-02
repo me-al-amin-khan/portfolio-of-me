@@ -9,6 +9,8 @@
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- lazyload -->
+        <script src="js/lazysizes.min.js" async=""></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
@@ -32,7 +34,9 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Al Amin Khan</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.webp" alt="profile-pic-of-al-amin-khan" /></span>
+                <span class="d-none d-lg-block">
+                    <img class="lazyload img-fluid img-profile rounded-circle mx-auto mb-2" data-src="assets/img/profile.webp" alt="profile-pic-of-al-amin-khan" />
+                </span>
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -163,7 +167,7 @@
                         <li class="list-inline-item" data-toggle="tooltip" title="Noje-js"><i class="fab fa-node-js fa-2x"></i></li>
                         <li class="list-inline-item" data-toggle="tooltip" title="npm"><i class="fab fa-npm fa-2x"></i></li>
                         <li class="list-inline-item" data-toggle="tooltip" title="Python"><i class="fab fa-python fa-2x"></i></li>
-                        <li class="list-inline-item" data-toggle="tooltip" title="Django"><img src="https://img.icons8.com/ios-filled/100/000000/django.png" alt="django"/></li>
+                        <li class="list-inline-item" data-toggle="tooltip" title="Django"><img src="https://img.icons8.com/ios-filled/100/000000/django.png" height="100px" width="100px" alt="django"/></li>
                         <li class="list-inline-item data-toggle="tooltip" title="Git""><i class="fab fa-git fa-2x"></i></li>
                         <li class="list-inline-item" data-toggle="tooltip" title="GitHub"><i class="fab fa-github fa-2x"></i></li>
                         <li class="list-inline-item" data-toggle="tooltip" title="Bootstrap"><i class="fab fa-bootstrap fa-2x"></i></li>
@@ -204,21 +208,23 @@
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                            <p> <strong>Web Application Development With Python Using Django Framework.</strong> <br />
-                                <small><i>Certification ID: NH18972 </i></small> 
-                            </p>
-                            <i>- from New Horizons Computer Learning Center, Dhanmondi, Dhaka. </i>
-                        </li>
-                        <br>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                            <p> <strong>Complete Web Development by Jhankar Mahbub (JavaScript, React, Context API, Redux, JSON, Firebase, Node, Express, API, MongoDB, Chrome devtools & others).</strong> </p>
-                            <i>- from ProgrammingHero</i>
-                        </li>
-                    </ul>
+                    <div>
+                        <ul class="fa-ul">
+                            <li>
+                                <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                                <p> <strong>Web Application Development With Python Using Django Framework.</strong> <br />
+                                    <small><i>Certification ID: NH18972 </i></small> 
+                                </p>
+                                <i>- from New Horizons Computer Learning Center, Dhanmondi, Dhaka. </i>
+                            </li>
+                            <br>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                                <p> <strong>Complete Web Development by Jhankar Mahbub (JavaScript, React, Context API, Redux, JSON, Firebase, Node, Express, API, MongoDB, Chrome devtools & others).</strong> </p>
+                                <i>- from ProgrammingHero</i>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
