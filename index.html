@@ -13,6 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link href="css/styles.css" rel="stylesheet" />
         <!-- lazyload -->
         <script src="js/lazysizes.min.js" async=""></script>
@@ -157,41 +158,94 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Skills</h2>
                     <div class="subheading mb-3">Programming Languages, Frameworks & Tools</div>
-                    <ul class="list-inline dev-icons" data-toggle="tooltip" title="HTML">
-                        <li class="list-inline-item">
-                          <i class="fab fa-html5 fa-2x"></i>
-                        </li>
-                        <li class="list-inline-item" data-toggle="tooltip" title="CSS"><i class="fab fa-css3-alt fa-2x"></i></li>
-                        <li class="list-inline-item" data-toggle="tooltip" title="JavaScript"><i class="fab fa-js-square fa-2x"></i></li>
-                        <li class="list-inline-item" data-toggle="tooltip" title="React"><i class="fab fa-react fa-2x"></i></li>
-                        <li class="list-inline-item" data-toggle="tooltip" title="Noje-js"><i class="fab fa-node-js fa-2x"></i></li>
-                        <li class="list-inline-item" data-toggle="tooltip" title="npm"><i class="fab fa-npm fa-2x"></i></li>
-                        <li class="list-inline-item" data-toggle="tooltip" title="Python"><i class="fab fa-python fa-2x"></i></li>
-                        <li class="list-inline-item" data-toggle="tooltip" title="Django"><img src="https://img.icons8.com/ios-filled/100/000000/django.png" height="100px" width="100px" alt="django"/></li>
-                        <li class="list-inline-item data-toggle="tooltip" title="Git""><i class="fab fa-git fa-2x"></i></li>
-                        <li class="list-inline-item" data-toggle="tooltip" title="GitHub"><i class="fab fa-github fa-2x"></i></li>
-                        <li class="list-inline-item" data-toggle="tooltip" title="Bootstrap"><i class="fab fa-bootstrap fa-2x"></i></li>
-                        <li class="list-inline-item" data-toggle="tooltip" title="GitHub"><i class="fab fa-github fa-2x"></i></li>
-                    </ul>
-                    <!-- <div class="subheading mb-3">Workflow</div> -->
-                    <!-- <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul> -->
+                    <div>
+                        <div class="row">
+                            <h4><strong>Programming Language</strong> </h4>
+                            <div class="col-md-4">
+                                <p class="text-muted fs-5"> Back-end: </p>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Java</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Python</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">SQL</span></p>
+                            </div>
+                
+                            <div class="col-md-4">
+                                <p class="text-muted fs-5">Front-end:</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">HTML</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">CSS</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Javascript</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">TypeScript</span></p>
+                            </div> 
+                        </div>
+                        <br>
+                        <div class="row">
+                            <h4><strong>Web Technologies, Library & Frameworks</strong> </h4>
+                            <div class="col-md-4">
+                                <p class="text-muted fs-5"> UI: </p>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 my-1 rounded-pill">Bootstrap</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 my-1 rounded-pill">Material-UI</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 my-1 rounded-pill">Tailwind CSS</span></p>
+                            </div>
+                
+                            <div class="col-md-4">
+                                <p class="text-muted fs-5">Front-end:</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">React</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Redux</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Angular</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">jQuery</span></p>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <p class="text-muted fs-5">Back-end:</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Spring Boot</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Maven</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Hibernate</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Express</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Postgresql</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">SQLite</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">MongoDB</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">MySQL</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Firebase</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">NodeJS</span></p>
+                            </div>
+                
+                            <br>
+                
+                            <h4><strong>Tools and Softwares</strong> </h4>
+                            <div class="col-md-4">
+                                <p class="text-muted fs-5">Tools: </p>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Linux OS</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Intellij Idea</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">VS code</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Git</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Github</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Chrome Dev-tools</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Postman</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Jira</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">npm</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">yarn</span></p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="text-muted fs-5">Software: </p>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Figma</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Canva</span></p>
+                                <p class="pill"><span class="border border-dark-subtle bg-body-tertiary px-2 pb-1 rounded-pill">Photoshop</span></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
@@ -239,7 +293,8 @@
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
