@@ -44,7 +44,16 @@
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none display-6">Al Amin Khan</span>
                 <span class="d-none d-lg-block">
-                    <img class="lazyload img-fluid img-profile rounded-circle mx-auto mb-2" data-src="assets/img/profile.webp" alt="al-amin-khan-profile-pic" width="100%" height="auto" />
+                    <picture>
+                        <source srcset="assets/img/profile-small.webp" media="(min-width: 576px)">
+                        <source srcset="assets/img/profile-medium.webp" media="(min-width: 768px)">
+                        <source srcset="assets/img/profile-large.webp.webp" media="(min-width: 992px)">
+                        <img 
+                        class="lazyload img-fluid img-profile rounded-circle mx-auto mb-2"
+                        data-src="assets/img/profile.webp"
+                        alt="al-amin-khan-profile-pic" 
+                        style="width:auto;">
+                      </picture> 
                 </span>
             </a>
 
